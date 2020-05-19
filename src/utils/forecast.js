@@ -8,12 +8,8 @@ const forecast=(lat, lon, callback)=>{
                 }else if(body.error){
                     callback('Unable to find location',undefined)
                 }else{
-                    callback(undefined, 'The weather is '+ body.current.weather_descriptions[0] + ' It is currently ' + body.current.temperature + ' degress out. But it feels like ' + body.current.feelslike + 'degrees out.')
+                    callback(undefined, 'The weather is '+ body.current.weather_descriptions[0] + ' It is currently ' + body.current.temperature + ' degress out. But it feels like ' + body.current.feelslike + ' degrees out.')
 
-
-                        // { currentTemp :body.current.temperature,
-                        // feelTemp : body.current.feelslike,
-                        // weatherDes : body.current.weather_descriptions[0] })
                 }
             })
 }

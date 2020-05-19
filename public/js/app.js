@@ -10,7 +10,7 @@ const search = document.querySelector('input')
 const messageOne = document.querySelector('#p1')
 const messageTwo = document.querySelector('#p2')
 
-messageOne.textContent='From Javascript'
+messageOne.textContent='This is where the weather will be displayed.'
 messageTwo.textContent='hello'
 
 weatherForm.addEventListener('submit',(e)=>{
