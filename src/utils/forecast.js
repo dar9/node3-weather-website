@@ -8,7 +8,7 @@ const forecast=(lat, lon, callback)=>{
                 }else if(body.error){
                     callback('Unable to find location',undefined)
                 }else{
-                    callback(undefined, 'The weather is '+ body.current.weather_descriptions[0] + ' It is currently ' + body.current.temperature + ' degress out. But it feels like ' + body.current.feelslike + ' degrees out.')
+                    callback(undefined, 'The weather is "'+ body.current.weather_descriptions[0] +'" It is currently ' + body.current.temperature + ' degress out. It feels like ' + body.current.feelslike + ' degress out. The humidty is '+body.current.humidity+'% and the uv_index is '+body.current.uv_index+'. The wind speed is '+body.current.wind_speed+'. The wind direction is :'+body.current.wind_dir+'. Is it daytime? :'+body.current.is_day)
 
                 }
             })
